@@ -26,7 +26,7 @@ const Carousel = () => {
       subtitle: "Building relationships that last forever",
       buttonText: "GET INVOLVED"
     },
-  ];
+  ]
 
   // Auto-play functionality
   useEffect(() => {
@@ -102,7 +102,7 @@ const Carousel = () => {
         }
       `}</style>
       
-      <div className="relative w-full h-[70vh] sm:h-[80vh] md:h-[90vh] lg:h-[110vh] overflow-hidden">
+      <div className="relative w-full h-[70vh] sm:h-[80vh] md:h-[90vh] lg:h-[120vh] overflow-hidden">
         {/* Carousel wrapper */}
         <div className="relative w-full h-full">
           {slides.map((slide, index) => (
@@ -115,7 +115,7 @@ const Carousel = () => {
               <img
                 src={slide.image}
                 alt={slide.alt}
-                className="absolute inset-0 w-full h-full object-cover object-center"
+                className="absolute inset-0 w-full h-full object-cover object-top"
               />
               {/* Optional overlay for better text readability */}
               <div className="absolute inset-0 bg-black/30" />

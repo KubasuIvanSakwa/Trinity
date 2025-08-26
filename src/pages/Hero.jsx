@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Users, Heart, Play, ChevronRight, Clock, MapPin, User, MessageCircle, Instagram } from 'lucide-react';
 import Carousel from '../components/Carousel';
+import RotatingWords from '../components/RotatingWords';
+import ChurchInfoSection from '../components/ChurchInfoSection';
+import SermonSection from '../components/SermonSection';
+import EventCountdown from '../components/EventCountdown';
+import Testimonial from '../components/Testimonial';
+import Footer from '../components/Footer';
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -26,7 +32,7 @@ const Hero = () => {
           seconds: Math.floor((distance % (1000 * 60)) / 1000)
         });
       }
-    };
+    }
 
     const timer = setInterval(updateCountdown, 1000);
     updateCountdown();
@@ -58,36 +64,40 @@ const Hero = () => {
     }
   ];
 
-  const blogPosts = [
-    {
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop',
-      category: 'Modern Church',
-      title: 'Building a Stronger Community Through Faith',
-      date: 'April 25, 2025',
-      comments: 3
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1438032005730-c779502df39b?w=300&h=200&fit=crop',
-      category: 'Worship',
-      title: 'The Power of Collective Prayer',
-      date: 'April 20, 2025',
-      comments: 7
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=300&h=200&fit=crop',
-      category: 'Community',
-      title: 'Serving Others: A Path to Spiritual Growth',
-      date: 'April 18, 2025',
-      comments: 12
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop',
-      category: 'Faith',
-      title: 'Finding Hope in Times of Uncertainty',
-      date: 'April 15, 2025',
-      comments: 5
-    }
-  ];
+  // const blogPosts = [
+  //   {
+  //     image:
+  //       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop",
+  //     category: "Modern Church",
+  //     title: "Building a Stronger Community Through Faith",
+  //     date: "April 25, 2025",
+  //     comments: 3,
+  //   },
+  //   {
+  //     image:
+  //       "https://images.unsplash.com/photo-1438032005730-c779502df39b?w=300&h=200&fit=crop",
+  //     category: "Worship",
+  //     title: "The Power of Collective Prayer",
+  //     date: "April 20, 2025",
+  //     comments: 7,
+  //   },
+  //   {
+  //     image:
+  //       "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=300&h=200&fit=crop",
+  //     category: "Community",
+  //     title: "Serving Others: A Path to Spiritual Growth",
+  //     date: "April 18, 2025",
+  //     comments: 12,
+  //   },
+  //   {
+  //     image:
+  //       "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop",
+  //     category: "Faith",
+  //     title: "Finding Hope in Times of Uncertainty",
+  //     date: "April 15, 2025",
+  //     comments: 5,
+  //   },
+  // ];
 
   const instagramImages = [
     'https://images.unsplash.com/photo-1507692138018-ea015e5c6e41?w=200&h=200&fit=crop',
@@ -148,204 +158,22 @@ const Hero = () => {
           </div>
         </div>
       </section> */}
-
-        <div className='bg-red-500'>
-          <Carousel />
-        </div>
+      <Carousel />
 
       {/* Introduction Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            We Preach the Gospel in Every Sermon
-          </h2>
-          <div className="space-y-6 text-gray-600 text-lg leading-relaxed mb-8">
-            <p>
-              Our church stands as a beacon of hope in our community, dedicated to sharing the transformative power of God's word. Through every sermon, prayer, and gathering, we strive to create an environment where hearts are touched and lives are changed.
-            </p>
-            <p>
-              We believe in the power of authentic worship, genuine fellowship, and practical application of biblical principles. Our mission extends beyond the church walls as we serve our community and spread God's love to all who need it.
-            </p>
-          </div>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors text-lg font-medium">
-            About Us
-          </button>
-        </div>
-      </section>
+      <RotatingWords />
 
-      {/* Upcoming Event / Countdown */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Join Our Week of Prayer for Christian Unity Coming on 19th July 2025
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-2xl mx-auto">
-            <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-              <div className="text-3xl font-bold">{timeLeft.days}</div>
-              <div className="text-sm">Days</div>
-            </div>
-            <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-              <div className="text-3xl font-bold">{timeLeft.hours}</div>
-              <div className="text-sm">Hours</div>
-            </div>
-            <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-              <div className="text-3xl font-bold">{timeLeft.minutes}</div>
-              <div className="text-sm">Minutes</div>
-            </div>
-            <div className="bg-white bg-opacity-10 p-4 rounded-lg">
-              <div className="text-3xl font-bold">{timeLeft.seconds}</div>
-              <div className="text-sm">Seconds</div>
-            </div>
-          </div>
-          
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors font-medium">
-            View All Events
-          </button>
-        </div>
-      </section>
+      <ChurchInfoSection />
 
-      {/* Event Schedule */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Event Schedule
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {events.map((monthGroup, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-blue-900 mb-4">{monthGroup.month}</h3>
-                <div className="space-y-4">
-                  {monthGroup.items.map((event, eventIndex) => (
-                    <div key={eventIndex} className="border-l-4 border-blue-600 pl-4">
-                      <div className="flex items-center text-sm text-gray-500 mb-1">
-                        <Calendar className="w-4 h-4 mr-1" />
-                        {event.date}
-                        <Clock className="w-4 h-4 ml-3 mr-1" />
-                        {event.time}
-                      </div>
-                      <h4 className="font-bold text-gray-900">{event.title}</h4>
-                      <p className="text-sm text-gray-600">{event.speaker}</p>
-                      <div className="flex items-center text-sm text-gray-500 mt-1">
-                        <MapPin className="w-4 h-4 mr-1" />
-                        {event.location}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SermonSection />
 
-      {/* Latest Worship */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            The Sound of Our Worship
-          </h2>
-          
-          <div className="bg-white p-8 rounded-lg shadow-sm mb-8">
-            <div className="flex items-center justify-center mb-6">
-              <div className="bg-blue-100 p-4 rounded-full">
-                <Play className="w-8 h-8 text-blue-600" />
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Serve Somebody: Think Together</h3>
-            <p className="text-gray-600 mb-6">Experience the power of our worship through this inspiring track</p>
-            
-            <div className="bg-gray-100 rounded-lg p-4">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm text-gray-600">0:00</span>
-                <span className="text-sm text-gray-600">4:32</span>
-              </div>
-              <div className="bg-blue-600 h-2 rounded-full w-1/3"></div>
-            </div>
-          </div>
-          
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
-            Read More
-          </button>
-        </div>
-      </section>
+      <EventCountdown />
 
-      {/* Testimonials */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Parishioners About Us
-          </h2>
-          
-          <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-lg">
-            <blockquote className="text-xl italic leading-relaxed mb-6">
-              "My wife and I come here every Sunday. The church's atmosphere is nice, inspirational and devout. Many good and kind people pray here. I recommend joining us with all your family."
-            </blockquote>
-            <cite className="text-blue-300 font-medium">— Alex Moore, London</cite>
-          </div>
-        </div>
-      </section>
+      <Testimonial />
 
-      {/* Blog Highlights */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            The Church Life
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {blogPosts.map((post, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <span className="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full">
-                    {post.category}
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-900 mt-3 mb-2 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>{post.date}</span>
-                    <div className="flex items-center">
-                      <MessageCircle className="w-4 h-4 mr-1" />
-                      {post.comments} Comments
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Footer />
 
-      {/* Instagram Feed */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center mb-8">
-            <Instagram className="w-8 h-8 text-gray-900 mr-3" />
-            <h2 className="text-2xl font-bold text-gray-900">Follow Us on Instagram</h2>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {instagramImages.map((image, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity cursor-pointer">
-                <img 
-                  src={image} 
-                  alt={`Instagram post ${index + 1}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
+      {/* Footer
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -390,7 +218,7 @@ const Hero = () => {
             <p>© 2025 AncoraThemes. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
