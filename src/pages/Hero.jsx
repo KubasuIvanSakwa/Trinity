@@ -149,7 +149,9 @@ const Hero = () => {
         </div>
       </section> */}
 
-      <Carousel />
+        <div className='bg-red-500'>
+          <Carousel />
+        </div>
 
       {/* Introduction Section */}
       <section className="py-16 bg-gray-50">
