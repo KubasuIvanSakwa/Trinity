@@ -35,18 +35,33 @@ const TypewriterWords = ({ words, typingSpeed = 100, pauseTime = 1000 }) => {
 
 export default function RotatingWords() {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-[2rem] mt-[2rem]  px-4 bg-white">
-      <p className="uppercase tracking-widest text-gray-500 font-medium mb-2">
-        Modern Church
-      </p>
-      <h1 className="text-4xl md:text-4xl font-bold leading-snug w-[50%] text-black/70">
-        Our Church is the True Path to Overcoming Suffering & Difficulties in
-        Life through Faith &{" "}
-        <TypewriterWords words={["Joy", "Hope", "Love"]} typingSpeed={120} pauseTime={3000} />.
-      </h1>
-      <p className="mt-4 font-semibold text-lg text-black/70">Piter Bowman</p>
-      <p className="text-gray-500">Lead Pastor</p>
-    </div>
+    <div className="flex flex-col items-center justify-center text-center px-4 py-10 mt-8 bg-white">
+    <p className="uppercase tracking-widest text-gray-500 font-medium mb-2 text-sm sm:text-base">
+      Catholic Parish
+    </p>
+
+    <h1 className="
+      text-lg sm:text-xl md:text-2xl lg:text-4xl 
+      font-bold leading-snug 
+      w-full sm:w-full md:w-4/5 lg:w-2/3 
+      text-black/70
+    ">
+      Through the Sacraments, Prayer, and Faith in Christ, 
+      Our Catholic Church guides souls on the path of Grace, 
+      Salvation, and{" "}
+      <TypewriterWords
+        words={["Hope", "Charity", "Peace"]}
+        typingSpeed={120}
+        pauseTime={3000}
+      />
+      .
+    </h1>
+
+    <p className="mt-4 font-semibold text-base sm:text-lg text-black/70">
+      Fr. Michael O'Connor
+    </p>
+    <p className="text-gray-500 text-sm sm:text-base">Parish Priest</p>
+  </div>
   );
 }
 

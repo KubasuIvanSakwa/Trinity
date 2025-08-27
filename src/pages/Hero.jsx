@@ -64,50 +64,6 @@ const Hero = () => {
     }
   ];
 
-  // const blogPosts = [
-  //   {
-  //     image:
-  //       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop",
-  //     category: "Modern Church",
-  //     title: "Building a Stronger Community Through Faith",
-  //     date: "April 25, 2025",
-  //     comments: 3,
-  //   },
-  //   {
-  //     image:
-  //       "https://images.unsplash.com/photo-1438032005730-c779502df39b?w=300&h=200&fit=crop",
-  //     category: "Worship",
-  //     title: "The Power of Collective Prayer",
-  //     date: "April 20, 2025",
-  //     comments: 7,
-  //   },
-  //   {
-  //     image:
-  //       "https://images.unsplash.com/photo-1529390079861-591de354faf5?w=300&h=200&fit=crop",
-  //     category: "Community",
-  //     title: "Serving Others: A Path to Spiritual Growth",
-  //     date: "April 18, 2025",
-  //     comments: 12,
-  //   },
-  //   {
-  //     image:
-  //       "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=300&h=200&fit=crop",
-  //     category: "Faith",
-  //     title: "Finding Hope in Times of Uncertainty",
-  //     date: "April 15, 2025",
-  //     comments: 5,
-  //   },
-  // ];
-
-  const instagramImages = [
-    'https://images.unsplash.com/photo-1507692138018-ea015e5c6e41?w=200&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1438557068880-c5f474830c31?w=200&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=200&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=200&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1438032005730-c779502df39b?w=200&h=200&fit=crop'
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       

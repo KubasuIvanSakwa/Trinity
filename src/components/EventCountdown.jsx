@@ -6,7 +6,7 @@ export default function EventCountdown() {
   const targetDate = useMemo(() => {
     const now = new Date();
     const dayOfWeek = now.getDay(); // Sunday=0, Saturday=6
-    const daysUntilSaturday = (6 - dayOfWeek + 7) % 7 || 7;
+    const daysUntilSaturday = (7 - dayOfWeek + 7) % 7 || 7;
     const saturday = new Date(now);
     saturday.setDate(now.getDate() + daysUntilSaturday);
     saturday.setHours(0, 0, 0, 0);
