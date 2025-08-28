@@ -38,7 +38,7 @@ export default function RotatingWords() {
   return (
     <div className="flex flex-col items-center justify-center text-center px-4 py-10 mt-8 bg-white">
       <p className="uppercase tracking-widest text-gray-500 font-medium mb-2 text-sm sm:text-base">
-        Modern Church
+        Trinity Chapel Ruiru
       </p>
 
       <h1
@@ -47,20 +47,22 @@ export default function RotatingWords() {
                w-full sm:w-4/5 md:w-2/3 lg:w-[50%] 
                text-black/70"
       >
-        Our Church is the True Path to Overcoming Suffering & Difficulties in
-        Life through Faith and{" "}
+        Our church is a spiritual family where you will grow in faith, discover
+        purpose, and experience life-changing{" "}
         <TypewriterWords
-          words={["Joy", "Hope", "Love"]}
+          words={["Faith", "Hope", "Love"]}
           typingSpeed={120}
-          pauseTime={3000}
+          pauseTime={2500}
         />
         .
       </h1>
 
       <p className="mt-4 font-semibold text-base sm:text-lg text-black/70">
-        Piter Bowman
+        Audacious Agents of Change
       </p>
-      <p className="text-gray-500 text-sm sm:text-base">Lead Pastor</p>
+      <p className="text-gray-500 text-sm sm:text-base">
+        Growing Deep to Reach Wide
+      </p>
     </div>
   );
 }

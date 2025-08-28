@@ -21,23 +21,32 @@ export default function SermonSection() {
 
         {/* RIGHT: Text content */}
         <div className="space-y-4 mt-6 md:mt-[2rem]">
+          {/* Section Tagline */}
           <p className="text-sm uppercase tracking-widest font-semibold text-gray-600">
             Work of the Church
           </p>
+
+          {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-            Preaching Christ through the Word of God
+            Preaching Christ and Transforming Lives
           </h2>
+
+          {/* Short Description */}
           <p className="text-gray-600">
-            Grounded in the truth of Scripture, our mission is to share the
-            Gospel of Jesus Christ and invite all people into a life of faith
-            and discipleship.
+            At Trinity Chapel Ruiru, we are committed to sharing the Gospel and
+            nurturing believers through the truth of Scripture, prayer, and
+            authentic community.
           </p>
+
+          {/* Highlighted Quote/Statement */}
           <p className="text-gray-500 border-l-2 border-gray-300 pl-4">
-            Each sermon is rooted in the Bible and seeks to encourage,
-            challenge, and equip believers to live out their faith in everyday
-            life, glorifying God in all they do.
+            Every message is rooted in God’s Word and seeks to encourage, equip,
+            and challenge us to live out our faith daily — becoming Audacious
+            Agents of Change.
           </p>
-          <button className="bg-[#f2543d] text-white font-semibold px-6 py-3 mt-4 cursor-pointer hover:bg-[#d9442f] transition-colors">
+
+          {/* CTA Button */}
+          <button className="bg-[#f2543d] text-white font-semibold px-6 py-3 mt-4 cursor-pointer hover:bg-[#d9442f] transition-colors rounded-lg">
             About Us
           </button>
         </div>

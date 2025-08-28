@@ -10,23 +10,24 @@ const Carousel = () => {
 
   // Sample images with different text content for each slide
   const slides = [
-    {
-      id: 1,
-      image: `${ch_1}`,
-      alt: "Church interior",
-      title: "OUR MISSION",
-      subtitle: "Connect and grow together in faith",
-      buttonText: "JOIN US"
-    },
-    {
-      id: 2,
-      image: `${ch_2}`,
-      alt: "Community worship",
-      title: "COMMUNITY",
-      subtitle: "Building relationships that last forever",
-      buttonText: "GET INVOLVED"
-    },
-  ]
+  {
+    id: 1,
+    image: `${ch_1}`,
+    alt: "Church interior",
+    title: "OUR MISSION",
+    subtitle: "Growing DEEP to Reach WIDE - transforming lives through Christ",
+    buttonText: "JOIN US"
+  },
+  {
+    id: 2,
+    image: `${ch_2}`,
+    alt: "Community worship",
+    title: "COMMUNITY",
+    subtitle: "A spiritual family for Adults, Youth & Children",
+    buttonText: "GET INVOLVED"
+  },
+];
+
 
   // Auto-play functionality
   useEffect(() => {

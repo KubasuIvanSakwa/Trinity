@@ -1,6 +1,6 @@
 import React from "react";
 import { Facebook, Twitter, Instagram, Dribbble } from "lucide-react";
-import logo from "../assets/logo-white.webp";
+import logo from "../assets/logo-white.svg";
 
 import ch_1 from "../assets/ch_1.jpg";
 import ch_2 from "../assets/ch_2.jpg";
@@ -30,14 +30,14 @@ export default function Footer() {
       </div>
 
       {/* Middle Section */}
-      <div className="py-10 text-center">
+      <div className="text-center">
         {/* Logo */}
-        <div className="flex justify-center items-center p-[0.5rem]">
-          <img src={logo} alt="Logo" />
+        <div className="flex justify-center items-center p-[0.5rem] mt-[-4rem]">
+          <img src={logo} alt="Logo" className="w-[15rem]"/>
         </div>
 
         {/* Links */}
-        <nav className="flex justify-center space-x-6 mb-6">
+        <nav className="flex justify-center space-x-6 mt-[-5rem] mb-6">
           <a href="#" className="hover:text-white transition">
             New
           </a>
