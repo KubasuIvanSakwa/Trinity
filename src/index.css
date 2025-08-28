@@ -2,6 +2,12 @@
 
 
 
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }

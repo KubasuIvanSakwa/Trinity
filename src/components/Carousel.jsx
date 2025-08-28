@@ -130,7 +130,7 @@ const Carousel = () => {
             <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white/90 mb-8 sm:mb-10 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl fade-in-subtitle leading-relaxed">
               {currentSlideData.subtitle}
             </p>
-            <button className="bg-[#FF6B47] hover:bg-[#E5523C] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 fade-in-button rounded-sm">
+            <button className="bg-[#FF6B47] cursor-pointer hover:bg-[#E5523C] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 fade-in-button rounded-sm">
               {currentSlideData.buttonText}
             </button>
           </div>
