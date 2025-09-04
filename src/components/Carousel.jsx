@@ -131,7 +131,7 @@ const Carousel = () => {
             <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white/90 mb-8 sm:mb-10 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl fade-in-subtitle leading-relaxed">
               {currentSlideData.subtitle}
             </p>
-            <button className="bg-[#FF6B47] cursor-pointer hover:bg-[#E5523C] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 fade-in-button rounded-sm">
+            <button className="text-slate-800 font-bold cursor-pointer bg-[#fff172] hover:bg-[#ddda12] py-3 px-6 sm:py-4 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg uppercase tracking-wider transition-all duration-300 transform hover:scale-105 fade-in-button rounded-sm">
               {currentSlideData.buttonText}
             </button>
           </div>
@@ -145,7 +145,7 @@ const Carousel = () => {
               type="button"
               className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 cursor-pointer ${
                 index === currentSlide
-                  ? 'bg-[#FF6B47] hover:bg-[#b84224] scale-110 sm:scale-125 shadow-lg shadow-orange-500/60'
+                  ? 'bg-[#fff172] hover:bg-[#ddda12]  scale-110 sm:scale-125 shadow-lg shadow-orange-500/60'
                   : 'bg-white/50 hover:bg-white/80 hover:shadow-md hover:shadow-orange-400/40'
               }`}
               aria-current={index === currentSlide}
